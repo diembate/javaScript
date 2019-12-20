@@ -1,0 +1,18 @@
+<script src="electriclamp.js"></script>
+<script src="switchbutton.js"></script>
+<script>
+    let electriclamp = new ElectricLamp();
+    let button = new SwitchButton();
+
+    button.connectToLamp(electriclamp);
+
+    for(let i = 0; i < 10; i++) {
+        console.log("******************************")
+        electriclamp.show();
+        button.switchOn();
+        electriclamp.show();
+        button.switchOff();
+        electriclamp.show();
+        console.log("******************************")
+    }
+</script>

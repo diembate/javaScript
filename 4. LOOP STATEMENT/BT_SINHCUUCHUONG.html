@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   
+   let multiplicationTable, row, column;
+   multiplicationTable = "<table border = '1' width = '100%' >";
+        for ( row = 1 ; row <= 10 ; row++) {
+            multiplicationTable = multiplicationTable + "<tr>";
+            for ( column = 2; column <= 10; column++) {
+                multiplicationTable = multiplicationTable + "<td>" + column+ "x" + column + " = " + (column*row) + "</td>";
+            }
+            multiplicationTable = multiplicationTable + "</tr>";
+            
+        }  
+        multiplicationTable = multiplicationTable + "</table>";
+        document.write(multiplicationTable);
+
+
+</script>
+
+</body>
+</html>

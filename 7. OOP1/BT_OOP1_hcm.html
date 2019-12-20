@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let hcn = function(width, length){
+        this.width = width;
+        this.length = length
+        this.getchuvi = function(){
+            return (width+length)*2
+        }
+        this.getdientich = function(){
+            return  width*length
+        }
+    }
+let newhcn = new hcn(4,5);
+    let chuvi = newhcn.getchuvi();
+    let dientich = newhcn.getdientich();
+    alert ("chuvi"+chuvi+" ;dientich"+dientich)
+</script>
+
+</body>
+</html>
+

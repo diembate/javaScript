@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <label>PRODUCT</label><br/>
+    <input type="text" id="product">
+    <button type="button" onclick="showList()">Display</button>
+    <button type="button" onclick="add()">Add Product</button>
+    <button type="button" onclick="rename()">Rename</button>
+    <button type="button" onclick="deleteProduct()">Delete Product</button>
+    
+        </ol>
+    <script>
+        let arr = ['bed', 'armchair', 'bookcase', 'clock', 'table']
+        function showList() {
+            let product = document.getElementById("product").value
+            for(i = 0; i< arr.length; i++) {
+               if ( product === arr[i] ) {
+                alert(arr[i])
+                break; 
+                }
+            }
+        }
+    </script>
+</body>
+</html>

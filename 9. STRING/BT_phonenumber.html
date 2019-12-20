@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ 
+         <label>Enter your phone number </label>
+    <input type="text" id = "phone"></input>
+    <button type="button" onclick = " phoneNumber()">Validate</button>
+<script>
+    function phoneNumber (){
+    let number = document.getElementById("phone").value
+    RegExp = /([0-9]{2})-[0]([0-9]{9})$/
+    if (RegExp.test(number)){
+        alert (" true")
+        
+    }
+    else{
+        alert ("false")
+    }
+}
+
+</script>
+    </script>
+</body>
+</html>

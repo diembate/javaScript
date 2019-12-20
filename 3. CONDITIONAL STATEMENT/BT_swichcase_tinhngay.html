@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="month">
+        <button value="" type="submit" onclick="tinhNgay()">tinh ngay</button>
+    </form>
+    <script>
+       function tinhNgay() {
+           let inputmonth=document.getElementById("month").value;
+            let month = parseInt(inputmonth);
+            switch(month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                 alert ("Thang co 31 ngay");
+                break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                alert ("Thang co 30 ngay");
+                break;
+                case 2:
+                alert ("Thang co 28 ngay hoac 29 ngay");
+                break;
+                }
+       }
+    </script>
+
+</body>
+</html>

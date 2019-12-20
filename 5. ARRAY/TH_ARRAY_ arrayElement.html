@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Sample Screen</h2>
+    <input type="text" id="nhap"></input>
+    <button type="button" id="Add" onclick="Add()">Add</button>
+    <button type="button" id="Display" onclick="Display()">Display</button>
+    <p id="kq"></p>
+    <script>
+let x= 0;
+let array = Array()
+function Add() {
+array [x] = document.getElementById("nhap").value;
+alert("element:"+ array[x]+"add at index" + x);
+x++;
+document.getElementById("nhap").value = "";
+}
+function Display() {
+    let e = "<hr/>";
+    for (let i = 0; i < array.length; i++) {
+        e += "Element " + i + " = " + array[i] + "<br/>";
+    }
+    document.getElementById("kq").innerHTML = e;
+}
+</script>
+</body>
+</html>

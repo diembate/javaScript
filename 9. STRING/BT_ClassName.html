@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <label>Enter </label>
+        <input type="text" id = "name"></input>
+        <button type="button" onclick = "nameClass(document.getElementById('name').value)">Validate</button>
+    <script>
+         function yourClass() {
+            RegExp = /^[ACP]+([0-9]{4})+[GHIKLM]/;
+            return RegExp.test();
+        }
+        function nameClass(){
+            if (yourClass()) {
+                alert ();
+            } else {
+                alert()
+            }
+        }
+    
+       
+    
+    </script>
+</body>
+</html>

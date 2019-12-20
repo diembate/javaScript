@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    let ArrayA = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe ','Regulus']
+    let ArrayB = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa' ,'Major', 'Leo']
+    function processStar(starName){  
+            // chạy vong lặp arrayA
+            for (var i=0; i < arrayA.length; i++){
+                // xét điều kiện 
+                if(starName == arrayA[i]){
+                    return arrayB[i];
+                } 
+            } 
+            return "No star found!";
+        }
+var getStar = prompt("Input the star name.");
+//dùng hàm với tham số đưa vào là getStar
+var result = processStar(getStar);
+alert(result);
+    </script>
+</body>
+</html>

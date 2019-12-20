@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function findMinscore(arr) {
+            let minScore = arr[0];
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i] < minScore) {
+                    minScore = arr[i];
+
+                }
+            }
+            return minScore
+        }
+        let arr1 = [10, 5, 2, 8, -1, 6, 8];
+        let minArr1 = findMinscore(arr1);
+        alert('min score: ' + minArr1);
+
+        let arr2 = [2, 4, 0, 5, 1];
+        let minArr2 = findMinscore(arr2);
+        alert('min score: ' + minArr2)
+
+        let arr3 = [8, 6, 2, 1, 1, 4];
+        let minArr3 = findMinscore(arr3);
+        alert('min score: ' + minArr3)
+
+    </script>
+</body>
+
+</html>

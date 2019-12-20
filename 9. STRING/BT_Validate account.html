@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter your account </label>
+    <input type="text" id = "name"></input>
+    <button type="button" onclick = "validateAccount(document.getElementById('name').value)">Validate</button>
+<script>
+    function validateAccount(account){
+        if (isAccount(account)) {
+            alert (" your account true");
+        } else {
+            alert(" your account false. Enter account difference")
+        }
+    }
+
+    function isAccount(account) {
+        RegExp = /^[_a-z0-9]{6, }$/;
+        return RegExp.test(account);
+    }
+
+</script>
+
+</body>
+</html>

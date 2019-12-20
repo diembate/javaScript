@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Temperature = function(C) {
+            this.C = C
+            this.getCsangF = function() {
+                return 9/5 * C + 32 ;
+            }
+            this.getCsangK = function() {
+                return C + 273,15;
+            }
+            }
+            let newTTemperature = new Temperature(25)
+            let F = newtemperature.getCsangF();
+            let K = newtemperature.getCsangK();
+            alert (" Độ F:" + F + ";  ĐỘ K" + K);
+
+        
+    </script>
+
+
+</body>
+</html>

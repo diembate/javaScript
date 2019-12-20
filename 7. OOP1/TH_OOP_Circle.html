@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let Circle = function(bankinh) { 
+        this.bankinh = bankinh;
+        this.getdientich = function() {
+        return bankinh * bankinh * Math.PI;
+        }
+        this.getchuvi = function() {
+            return 2 * bankinh * Math.PI
+        }
+    }
+        let newCircle = new Circle(4)
+        let dientich = newCircle.getdientich();
+        let chuvi = newCircle.getchuvi();
+        alert ("chuvi "+chuvi+" ; dientich "+dientich)
+    </script>
+</body>
+</html>

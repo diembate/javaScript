@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var mobile = function () {
+            this.statusMobie = false;
+            this.statuspin = 100;
+            this.savewriting = [];
+            this.saveinbox = [];
+            this.savesent = [];
+            this.checkStatus = function () {
+                return this.statusMobie = true;
+            }
+
+            this.charge = function () {
+                return this.statuspin = 100;
+            }
+            this.turnOn = function () {
+                this.statusMobile = true;
+                this.statuspin--;
+            }
+            this.turnOff = function () {
+                this.statusMobie = false;
+                this.statuspin--;
+            }
+
+    
+        this.sendMessage = function (message, mobile) {
+            if (this.checkStatus()) {
+                mobile.receiveMessage(message);
+                this.statuspin--;
+            }
+        }
+        this.checkMessage = function () {
+            if (this.checkStatus()) {
+                this.statuspin--;
+                return this.inboxMessages.pop();
+            }
+        }
+        this.checkSentMessage = function () {
+            if (this.checkStatus()) {
+                return sentMessage.pop();
+                this.statuspin--;
+            }
+        }
+    }
+        let nokia = new mobile();
+        let iphone = new mobile();
+        iphone.turnOn();
+        nokia.turnOn();
+        nokia.sendMessage('alo alo', iphone);
+        console.log(nokia.statusMobie);
+        
+        document.write(iphone.checkMessage())
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       function ElectricLamp(){
+           this.status;
+           this.turnOff = function(){
+               this.status = false;
+               alert(" turn off")
+           }
+           this.turnOn = function(){
+               this.status = true;
+               alert("turn on")
+           
+           }
+       }
+
+       function SwitchButton(){
+           this.status;
+           this.lamp ;
+           this.connectToLamp = function(electricLamp) {
+               this.lamp = electricLamp;
+           }
+           this.switchOff = function(lamp){
+               this.status = true;
+               this.lamp.turnOff()
+           }
+           this.switchOn = function(lamp){
+               this.status = true;
+               this.lamp.turnOn();
+           }
+       }
+
+       let newElectricLamp = new ElectricLamp();
+       let newSwitchButton = new SwitchButton();
+
+       newSwitchButton.connectToLamp(newElectricLamp)
+       for (time= 0; time< 10; time++){
+           console.log(newSwitchButton.switchOn())
+           console.log(newSwitchButton.switchOff())
+       }
+
+       
+    </script>
+</body>
+
+</html>

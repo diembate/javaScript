@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    let enterVatLy;
+    let enterHoaHoc;
+    let enterSinhHoc;
+
+    enterVatLy = prompt("enter the diemvatly")
+    enterHoaHoc = prompt("enter the diemhoahoc")
+    enterSinhHoc = prompt("enter the dieminhhoc")
+
+    vatly = parseInt(enterVatLy);
+    hoahoc = parseInt(enterHoaHoc);
+    sinhhoc = parseInt(enterSinhHoc);
+
+    let diemtrungbinh = (vatly + hoahoc + sinhhoc)/3
+    document.write("diemtrungbinh: " + diemtrungbinh + "<br>")
+    
+    let tongdiem = (vatly + hoahoc + sinhhoc);
+    document.write("tongdiem: " + tongdiem);
+  </script>
+</body>
+</html>
